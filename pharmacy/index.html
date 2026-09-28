@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>داروخانه سبز | نسخه‌ات را بفرست، دارویت را بگیر</title>
+<meta name="description" content="دموی داروخانه سبز؛ قرص‌دان هفتگی، جستجوی دارو، مشاوره با داروساز و ارسال نسخه.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800;900&display=swap" media="print" onload="this.media='all'">
+<style>
+:root{--gr:#0b4f3c;--mint:#d8f2e4;--pale:#f3faf6;--am:#f0a02a;--w:#fff;--f:"Vazirmatn",Tahoma,sans-serif;--e:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 16px/1.9 var(--f);background:var(--pale);color:var(--gr);overflow-x:hidden}
+a{color:inherit;text-decoration:none}button,input{font:inherit;color:inherit}button{cursor:pointer;border:0;background:none}
+:focus-visible{outline:3px solid var(--am);outline-offset:3px}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 5vw}
+.logo{display:flex;align-items:center;gap:10px;font:900 1.5rem/1 var(--f)}
+.logo i{width:34px;height:34px;border-radius:10px;background:var(--gr);position:relative}
+.logo i:before,.logo i:after{content:"";position:absolute;background:var(--mint);border-radius:2px;top:50%;left:50%;transform:translate(-50%,-50%)}
+.logo i:before{width:18px;height:6px}.logo i:after{width:6px;height:18px}
+.nav nav{display:flex;gap:26px;font-weight:600}
+.st{display:inline-flex;align-items:center;gap:10px;background:#fff;border-radius:99px;padding:4px 18px;font-weight:600;font-size:.92rem;box-shadow:0 2px 0 var(--mint)}
+.st i{width:10px;height:10px;border-radius:50%;background:#2fb26a;animation:pl 1.8s infinite}
+.st.cl i{background:#c9503f;animation:none}
+@keyframes pl{0%{box-shadow:0 0 0 0 rgba(47,178,106,.6)}100%{box-shadow:0 0 0 12px rgba(47,178,106,0)}}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:5vw;align-items:center;padding:30px 5vw 80px}
+h1{font:900 clamp(2.6rem,6.4vw,5.2rem)/1.3;margin:16px 0}
+.hero p.s{max-width:42ch;margin-bottom:24px}
+.sb{position:relative;max-width:520px}
+.sb input{width:100%;padding:16px 22px;border-radius:16px;border:3px solid var(--gr);background:#fff;font-weight:600}
+.sb input:focus{outline:0;box-shadow:6px 6px 0 var(--am)}
+.sg{position:absolute;inset:calc(100% + 8px) 0 auto;background:#fff;border:3px solid var(--gr);border-radius:16px;list-style:none;overflow:hidden;z-index:6;display:none}
+.sg.o{display:block;animation:dn .25s var(--e)}
+.sg li{padding:10px 22px;cursor:pointer;transition:background .2s,padding .2s var(--e)}
+.sg li:hover,.sg li.h{background:var(--mint);padding-inline-start:32px}
+@keyframes dn{from{opacity:0;transform:translateY(-8px)}}
+.rs{min-height:2.2em;margin-top:12px;font-weight:600}
+.qk{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.qk button{background:var(--mint);border-radius:99px;padding:2px 16px;font-weight:600;transition:background .25s,color .25s}
+.qk button:hover{background:var(--gr);color:#fff}
+.bx{background:var(--mint);border-radius:36px;padding:26px 22px 22px}
+.bx h2{font:800 1.3rem/1.5 var(--f);margin-bottom:14px}
+.box{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;padding:12px;background:#bfe3cf;border-radius:22px;perspective:900px}
+.cp{position:relative;aspect-ratio:.6;border-radius:14px;background:#9fcfb5;box-shadow:inset 0 6px 10px rgba(11,79,60,.25)}
+.pill{position:absolute;left:50%;top:50%;width:34%;height:64%;border-radius:99px;background:linear-gradient(90deg,var(--am) 50%,#fff 50%);transform:translate(-50%,-50%) rotate(28deg) scale(0);transition:transform .5s var(--e)}
+.cp.on .pill{transform:translate(-50%,-50%) rotate(28deg) scale(1)}
+.lid{position:absolute;inset:0;border-radius:14px;background:var(--gr);color:#fff;display:grid;place-items:center;font-weight:800;transform-origin:50% 0;transition:transform .7s var(--e),background .3s;backface-visibility:hidden;box-shadow:0 3px 0 #06382a}
+.cp:hover .lid{background:#12664e}
+.cp.on .lid{transform:rotateX(-118deg)}
+.cp.td .lid:after{content:"";position:absolute;top:7px;left:50%;width:8px;height:8px;margin-left:-4px;border-radius:50%;background:var(--am);animation:pl2 1.8s infinite}
+@keyframes pl2{0%{box-shadow:0 0 0 0 rgba(240,160,42,.7)}100%{box-shadow:0 0 0 10px rgba(240,160,42,0)}}
+.bx p{margin-top:14px;font-weight:600}
+.bx small{display:block;opacity:.75;font-weight:400}
+section{padding:80px 5vw}
+h2.t{font:900 clamp(2rem,4.6vw,3.4rem)/1.4;margin-bottom:8px}
+.lead{max-width:50ch;margin-bottom:34px;opacity:.85}
+.ct{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.tk{position:relative;background:#fff;border:2px dashed var(--gr);border-radius:12px;padding:18px 20px 18px 20px;display:flex;gap:14px;align-items:center;font-weight:800;transition:background .3s,transform .35s var(--e)}
+.tk:before,.tk:after{content:"";position:absolute;left:-11px;width:20px;height:20px;border-radius:50%;background:var(--pale);border:2px dashed var(--gr);clip-path:inset(0 0 0 50%)}
+.tk:before{top:-11px}.tk:after{bottom:-11px}
+.tk:hover{background:var(--mint);transform:rotate(-1.4deg) translateY(-4px)}
+.tk svg{width:34px;height:34px;flex:none;fill:none;stroke:var(--gr);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:transform .4s var(--e)}
+.tk:hover svg{transform:rotate(-12deg) scale(1.15)}
+.tk small{display:block;font-weight:400;opacity:.75;line-height:1.5}
+.rx{background:var(--gr);color:#fff}
+.rg{display:grid;grid-template-columns:1fr 1fr;gap:6vw}
+.stp{list-style:none;counter-reset:n;margin-top:20px}
+.stp li{position:relative;padding:0 62px 26px 0}
+.stp li:before{counter-increment:n;content:counter(n);position:absolute;right:0;top:0;width:44px;height:44px;border-radius:50%;background:var(--am);color:var(--gr);font:900 1.2rem/44px var(--f);text-align:center}
+.stp li:not(:last-child):after{content:"";position:absolute;right:21px;top:48px;bottom:4px;width:2px;background:repeating-linear-gradient(var(--am) 0 6px,transparent 6px 12px)}
+.stp b{display:block;font-size:1.15rem}
+.dz{display:grid;place-items:center;gap:10px;text-align:center;margin-top:26px;border:3px dashed rgba(255,255,255,.55);border-radius:20px;padding:30px 20px;cursor:pointer;transition:background .3s,border-color .3s}
+.dz:hover,.dz.dr{background:rgba(255,255,255,.1);border-color:var(--am)}
+.bar{width:min(260px,80%);height:8px;background:rgba(255,255,255,.2);border-radius:8px;overflow:hidden;display:none}
+.bar i{display:block;height:100%;width:0;background:var(--am)}
+.ch{background:#fff;color:var(--gr);border-radius:28px;padding:20px;height:100%;min-height:380px;display:flex;flex-direction:column}
+.ch h3{font:800 1.1rem/1.5 var(--f);margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.ch h3 small{font-weight:400;opacity:.7;font-size:.8rem}
+.cm{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:10px;scrollbar-width:none;max-height:340px}
+.m{max-width:82%;padding:10px 16px;border-radius:18px;animation:pop .4s var(--e) both}
+.m.u{align-self:flex-start;background:var(--mint);border-bottom-right-radius:4px}
+.m.p{align-self:flex-end;background:var(--gr);color:#fff;border-bottom-left-radius:4px}
+@keyframes pop{from{opacity:0;transform:scale(.85) translateY(10px)}}
+.ty{display:inline-flex;gap:5px;align-items:center;height:1.6em}
+.ty i{width:8px;height:8px;border-radius:50%;background:#fff;animation:bn 1s infinite}
+.ty i:nth-child(2){animation-delay:.15s}.ty i:nth-child(3){animation-delay:.3s}
+@keyframes bn{50%{transform:translateY(-6px);opacity:.5}}
+footer{padding:40px 5vw;background:var(--mint);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-weight:600}
+@media(max-width:860px){.hero,.rg{grid-template-columns:1fr}.nav nav{display:none}}
+@media(max-width:480px){.box{gap:5px;padding:8px}.cp{aspect-ratio:.5}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="nav"><a class="logo" href="#"><i></i>داروخانه سبز</a><nav><a href="#ct">دسته‌بندی</a><a href="#rx">ارسال نسخه</a><a href="#ch">مشاوره</a></nav><span class="st" id="st"><i></i><span id="stt"></span></span></div>
+
+<header class="hero">
+  <div>
+    <h1>نسخه‌ات را بفرست، دارویت را بگیر</h1>
+    <p class="s">داروساز ما نسخه را بررسی می‌کند و دارو را به در خانه‌ات می‌رساند. اسم دارو را هم می‌توانی همین‌جا جستجو کنی.</p>
+    <div class="sb"><input id="q" type="search" placeholder="نام دارو یا محصول، مثلاً ویتامین" aria-label="جستجوی دارو" autocomplete="off"><ul class="sg" id="sg" role="listbox"></ul></div>
+    <p class="rs" id="rs" role="status"></p>
+    <div class="qk" id="qk"><button>سرماخوردگی</button><button>ویتامین</button><button>ضدآفتاب</button><button>مادر و کودک</button></div>
+  </div>
+  <div class="bx">
+    <h2>قرص‌دان هفتگی: روی هر روز بزن</h2>
+    <div class="box" id="box"></div>
+    <p id="bp"></p><small style="opacity:.75">دموی نمایشی؛ برای یادآور مصرف واقعی از داروساز بپرس.</small>
+  </div>
+</header>
+
+<section id="ct">
+  <h2 class="t">هر چه لازم داری، یک‌جا</h2>
+  <p class="lead">دسته‌بندی را انتخاب کن تا جستجو با همان عنوان شروع شود.</p>
+  <div class="ct" id="cts"></div>
+</section>
+
+<section class="rx" id="rx">
+  <div class="rg">
+    <div>
+      <h2 class="t">ارسال نسخه در سه قدم</h2>
+      <ol class="stp">
+        <li><b>عکس نسخه را بفرست</b>از نسخه‌ی کاغذی یا الکترونیک عکس واضح بگیر.</li>
+        <li><b>داروساز بررسی می‌کند</b>موجودی و تداخل دارویی را چک می‌کنیم و اگر سؤالی بود زنگ می‌زنیم.</li>
+        <li><b>دارو به دستت می‌رسد</b>در محدوده‌ی شهر، همان روز تحویل درب منزل.</li>
+      </ol>
+      <label class="dz" id="dz"><input type="file" id="fi" accept="image/*" hidden><b id="dzt">عکس نسخه را اینجا رها کن یا بزن</b><div class="bar" id="bar"><i id="pb"></i></div></label>
+    </div>
+    <div class="ch" id="ch"><h3>گفت‌وگو با داروساز <small>نمونه؛ جای نظر پزشک را نمی‌گیرد</small></h3><div class="cm" id="cm"></div></div>
+  </div>
+</section>
+
+<footer><span>ساعت کار: هر روز ۸ صبح تا نیمه‌شب</span><span>این صفحه دموی طراحی است؛ نام، تلفن و اطلاعات فرضی‌اند.</span></footer>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],fa=n=>n.toLocaleString('fa-IR'),sleep=t=>new Promise(r=>setTimeout(r,t));
+/* وضعیت باز/بسته */
+const H=new Date().getHours(),op=H>=8;$('#st').classList.toggle('cl',!op);$('#stt').textContent=op?'الان باز است (تا نیمه‌شب)':'الان بسته است؛ باز می‌شود ساعت ۸ صبح';
+/* قرص‌دان */
+const D=['شنبه','یکشنبه','دوشنبه','سه‌شنبه','چهارشنبه','پنجشنبه','جمعه'],td=(new Date().getDay()+1)%7,bx=$('#box');
+bx.innerHTML=D.map((d,i)=>`<button class="cp${i===td?' td':''}" aria-pressed="false" aria-label="${d}"><span class="pill"></span><span class="lid">${d[0]}</span></button>`).join('');
+const cps=$$('.cp');
+function cnt(){const n=cps.filter(c=>c.classList.contains('on')).length;$('#bp').textContent=n?fa(n)+' روز از ۷ روز را باز کرده‌ای':'برای شروع، روز امروز را باز کن.'}
+bx.onclick=e=>{const c=e.target.closest('.cp');if(!c)return;c.classList.toggle('on');c.setAttribute('aria-pressed',c.classList.contains('on'));cnt()};
+cnt();
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){bx.style.pointerEvents='none';cps.forEach((c,i)=>setTimeout(()=>c.classList.add('on'),500+i*110));
+  setTimeout(()=>{cps.forEach((c,i)=>setTimeout(()=>c.classList.remove('on'),i*70));setTimeout(()=>{bx.style.pointerEvents='';cnt()},700)},500+7*110+800)}
+/* جستجو */
+const IT=['استامینوفن ۵۰۰','ایبوپروفن','شربت سرماخوردگی کودکان','ویتامین D3','مولتی‌ویتامین','ضدآفتاب SPF50','کرم مرطوب‌کننده','قطره‌ی چشم','تب‌سنج دیجیتال','فشارسنج دیجیتال','پروبیوتیک','امگا ۳','شامپو ضدشوره','پوشک و مراقبت نوزاد'],q=$('#q'),sg=$('#sg');
+function sug(){const v=q.value.trim(),l=v?IT.filter(x=>x.includes(v)).slice(0,5):[];sg.innerHTML=l.map(x=>`<li role="option">${x}</li>`).join('');sg.classList.toggle('o',!!l.length);$('#rs').textContent=''}
+function pickIt(t){q.value=t;sg.classList.remove('o');$('#rs').textContent='«'+t+'» در فهرست فروشگاه هست (نمایش دمو).'}
+q.oninput=sug;sg.onclick=e=>{const l=e.target.closest('li');if(l)pickIt(l.textContent)};
+q.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();const f=sg.querySelector('li');if(f)pickIt(f.textContent);else if(q.value.trim())$('#rs').textContent='برای «'+q.value.trim()+'» با داروساز تماس بگیر (نمایش دمو).'}};
+document.addEventListener('click',e=>{if(!e.target.closest('.sb'))sg.classList.remove('o')});
+$('#qk').onclick=e=>{const b=e.target.closest('button');if(b){q.value=b.textContent;q.focus();sug()}};
+/* دسته‌بندی */
+const C=[['مسکن و سرماخوردگی','قرص، شربت و اسپری','<rect x="3" y="9" width="18" height="6" rx="3" transform="rotate(-45 12 12)"/><path d="M9.5 9.5l5 5"/>'],['مراقبت پوست','مرطوب‌کننده و پاک‌کننده','<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/>'],['قلب و فشار','فشارسنج و مکمل قلب','<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>'],['مادر و کودک','شیر، پوشک، مراقبت','<rect x="8" y="9" width="8" height="12" rx="3"/><path d="M10 9V6h4v3M12 3v3"/>'],['ضدآفتاب و آرایشی','SPF بالا، بدون چربی','<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>'],['گیاهی و طبیعی','دمنوش و عرق گیاهی','<path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15zM5 19l8-8"/>'],['ویتامین و مکمل','مولتی‌ویتامین، امگا ۳','<path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/>'],['تجهیزات پزشکی','تب‌سنج، ماسک، باند','<path d="M10 14V5a2 2 0 0 1 4 0v9a4 4 0 1 1-4 0z"/><path d="M12 9v7"/>']];
+$('#cts').innerHTML=C.map(c=>`<button class="tk" data-q="${c[0]}"><svg viewBox="0 0 24 24" aria-hidden="true">${c[2]}</svg><span>${c[0]}<small>${c[1]}</small></span></button>`).join('');
+$('#cts').onclick=e=>{const b=e.target.closest('.tk');if(b){scrollTo({top:0,behavior:'smooth'});q.value=b.dataset.q;setTimeout(()=>{q.focus();sug()},400)}};
+/* ارسال نسخه (نمایشی) */
+const dz=$('#dz'),fi=$('#fi');
+function up(){const bar=$('#bar'),pb=$('#pb');bar.style.display='block';$('#dzt').textContent='در حال بارگذاری…';let p=0;const t=setInterval(()=>{p+=6+Math.random()*10;if(p>=100){p=100;clearInterval(t);$('#dzt').textContent='نسخه دریافت شد. این فقط نمایش دمو است و فایل جایی ارسال نمی‌شود.'}pb.style.width=p+'%'},120)}
+fi.onchange=()=>{if(fi.files.length)up()};
+['dragover','dragenter'].forEach(v=>dz.addEventListener(v,e=>{e.preventDefault();dz.classList.add('dr')}));
+['dragleave','drop'].forEach(v=>dz.addEventListener(v,e=>{e.preventDefault();dz.classList.remove('dr');if(v==='drop'&&e.dataTransfer.files.length)up()}));
+/* گفت‌وگو */
+const M=[['u','سلام، دو روزه گلودرد دارم. چه کار کنم؟'],['p','سلام! تب یا سرفه هم دارید؟ اگر بیماری زمینه‌ای دارید هم بگویید.'],['u','تب ندارم، فقط کمی خشکی گلو.'],['p','مایعات گرم بنوشید و استراحت کنید. اگر تا سه روز بهتر نشد یا تب کردید، حتماً به پزشک مراجعه کنید.']];
+let ran=0;async function chat(){if(ran)return;ran=1;const c=$('#cm');for(const [w,t] of M){const b=document.createElement('div');b.className='m '+w;if(w==='p'){b.innerHTML='<span class="ty"><i></i><i></i><i></i></span>';c.append(b);await sleep(1300);b.textContent=t}else{b.textContent=t;c.append(b)}c.scrollTop=c.scrollHeight;await sleep(800)}}
+new IntersectionObserver(([e],o)=>{if(e.isIntersecting){chat();o.disconnect()}},{threshold:.4}).observe($('#ch'));
+</script>
+</body>
+</html>
